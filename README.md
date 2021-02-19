@@ -25,6 +25,7 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](/2021-02-16/gpu/peppers/mlem_cuda-0.png)
 ```
+![Image](/2021-02-16/gpu/peppers/mlem_cuda-0.png)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
