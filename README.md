@@ -1,6 +1,15 @@
-## Welcome to GitHub Pages
+## Welcome to the TomoPy benchmarking repository
 
-You can use the [editor on GitHub](https://github.com/tomopy/tomopy.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This repository consists of of benchmarking data that is organized as follows:
+
+--date
+----cpu
+------peppers
+--------GRAD
+----gpu
+------peppers
+--------MLEM
+--------SIRT
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -25,7 +34,6 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](/2021-02-16/gpu/peppers/mlem_cuda-0.png)
 ```
-![Image](/2021-02-16/gpu/peppers/mlem_cuda-0.png)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
