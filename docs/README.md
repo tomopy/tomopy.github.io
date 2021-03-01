@@ -1,6 +1,8 @@
 ## Welcome to the TomoPy benchmarking repository
 
-This website contains benchmarking data for the lastest stable version of TomoPy. 
+This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go here. 
+
+Benchmarking data is generated for each of TomoPy's reconstruction algorithms. The benchmarks are run using the following 
 
 The benchmarking data is organized as follows:
 
@@ -37,11 +39,13 @@ Syntax highlighted code block
 [Link](url) and ![Image](/2021-02-16/gpu/peppers/mlem_cuda-0.png)
 ```
 
-[2021-02-08.md](/docs/2021-02-08.md)
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tomopy/tomopy.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+[2021-02-08.md](/docs/2021-02-08.md)
 
