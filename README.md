@@ -7,7 +7,7 @@ This website contains all of the benchmarking data for the latest stable version
 ### Data generation
 
 The data is generated using the routines provided [here](https://github.com/tomopy/turbo-couscous). The process consists of three steps. 
-1. Data acquisition is simulated by taking projections from this image ![Image](/2021-02-08/peppers/original.png | width=50). Noise is also added to make the projections more realistic.
+1. Data acquisition is simulated by taking projections from this image ![Image](/2021-02-08/peppers/original.png). Noise is also added to make the projections more realistic.
 2. The simulated data is then reconstructed using each of the reconstruction algorithms. At the moment, these algorithms are: 
 - Gradient descent method (grad)
 - Fourier reconstruction algorithm (gridrec)
