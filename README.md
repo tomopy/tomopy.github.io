@@ -4,7 +4,20 @@
 
 This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go here. 
 
-Benchmarking data is generated for each of TomoPy's reconstruction algorithms. The benchmarks are run using the following image: ![Image](/2021-02-08/peppers/original.png). The algorithms all run with the same amount of noise, the same number of projected angles, and iterations (when applicable). The benchmarks are run 
+### Data generation
+
+The data is generated using the routines provided [here](https://github.com/tomopy/turbo-couscous). The process consists of three steps. 
+1. Data acquisition is simulated by taking projections from this image ![Image](/2021-02-08/peppers/original.png=25x). Noise is also added to make the projections more realistic.
+2. The simulated data is then reconstructed using each of the reconstruction algorithms. At the moment, these algorithms are: 
+- Gradient descent method (grad)
+- Fourier reconstruction algorithm (gridrec)
+- Maximum-likelihood expectation-maximization algorithm (mlem)
+- Ordered-subset expectation-maximization algorithm (osem)
+- Ordered-subset penalized maximum likelihood algorithm with weighted linear and quadratic penalties (ospml_hybrid)
+- Ordered-subset penalized maximum likelihood algorithm with quadratic penalties (ospml_quad)
+- Penalized maximum likelihood algorithm with weighted linear and quadratic penalties (pml_hybrid)
+- Simultaneous algebraic reconstruction technique (sirt)
+3. Each of the reconstructed images is then measured against the original image to quantify reconstruction quality. The quality of the reconstructions is plotted as a function of time and saved.
 
 ### Limitations
 
