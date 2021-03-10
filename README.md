@@ -2,24 +2,34 @@
 
 ### Introduction
 
-This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go to the [tomopy.github.io repository](https://github.com/tomopy/tomopy.github.io). 
+This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go to the [tomopy.github.io repository](https://github.com/tomopy/tomopy.github.io). These benchmarks are designed to give the reader the information they need to make an informed decision about which of TomoPy's reconstruction algorithms are right for their particular project. To accomplish that, these benchmarks contain results pertaining to the quality and speed of each reconstruction algorithm as well as the types of artifacts that may occur when using each of the algorithms. 
 
 ### Data generation
 
 The data is generated using the routines provided [turbo-couscous](https://github.com/tomopy/turbo-couscous). The process consists of three steps. 
 1. Data acquisition is simulated by taking projections from this image ![Image](/2021-02-08/peppers/original.png). Noise is also added to make the projections more realistic.
 2. The simulated data is then reconstructed using each of the reconstruction algorithms. At the moment, these algorithms are: 
-- Gradient descent method (grad)
-- Fourier reconstruction algorithm (gridrec)
-- Maximum-likelihood expectation-maximization algorithm (mlem)
-- Ordered-subset expectation-maximization algorithm (osem)
-- Ordered-subset penalized maximum likelihood algorithm with weighted linear and quadratic penalties (ospml_hybrid)
-- Ordered-subset penalized maximum likelihood algorithm with quadratic penalties (ospml_quad)
-- Penalized maximum likelihood algorithm with weighted linear and quadratic penalties (pml_hybrid)
-- Simultaneous algebraic reconstruction technique (sirt)
+- GRAD
+- Gridrec
+- MLEM
+- OSEM
+- OSPML Hybrid
+- OSMPL Quad
+- PML Hybrid
+- SIRT
 3. Each of the reconstructed images is then measured against the original image to quantify reconstruction quality. The quality of the reconstructions is plotted as a function of time and saved.
 
 ### Limitations
+
+While they are able to account for noise, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions. These include
+- Sample-based artifacts: 
+  - Motion artifacts: If part of the sample is moving during data collection, there can be blurriness in the reconstruction.
+  - Out of field artifact: Dark streaks can appear when part of the sample is outside the field-of-view of the detector.
+- Physics-based artifacts
+  - Beam hardening: If an X-ray is polychromatic, materials with a high atomic number can absorb the low-energy X-rays more than the high-energy X-rays.
+  - Photon starvation: When there are regions of relatively high attenuation in a sample, dark streaks can form as a result of few photons reaching the detector. 
+- Hardware-based artifacts:
+  - Ring artifact: If a detector is improperly calibrated of otherwise faulty, a faint ring will appear in the reconstruction.
 
 ### Data organization
 
@@ -40,18 +50,6 @@ The benchmarking data is organized as follows:
 ------peppers\
 --------sirt_gpu
 
-### Summary 
-
-|---|Speed|Memory|Quality|
-|---|---|---|---|
-|grad|---|---|---|
-|gridrec|---|---|---|
-|mlme|---|---|---|
-|osem|---|---|---|
-|ospml_hybrid|---|---|---|
-|ospml_quad|---|---|---|
-|sirt|---|---|---|
-|sirt_gpu|---|---|---|
 
 
 
