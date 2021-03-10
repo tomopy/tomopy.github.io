@@ -37,9 +37,7 @@ While they are able to account for noise, these benchmarks currently do not acco
   - Ring artifact: If a detector is improperly calibrated of otherwise faulty, a faint ring will appear in the reconstruction.
 
 ### Quality results
-![Image](2021-02-19/cpu/peppers/summary.svg)
-
-The above graph shows how the quality of the reconstruction relates to the algorithm used. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. 
+To see how the iterative reconstruction algorithms improve with each iteration, you see the [summary graph](https://github.com/tomopy/tomopy.github.io/blob/main/2021-02-19/cpu/peppers/summary.svg) after each benchmark. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. 
 
 ### Data organization
 
@@ -49,15 +47,17 @@ The benchmarking data is organized as follows:
   - cpu
     - peppers
       - gridrec
-      - mlem\
-      - osem\
+      - mlem
+      - osem
       - ospml_hybrid
       - osmpl_quad
       - pml_hybrid
       - sirt
+      - summary
   - gpu
     - peppers
       - sirt_gpu
+      - summary
 
 
 
