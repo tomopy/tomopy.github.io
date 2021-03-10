@@ -2,7 +2,9 @@
 
 ### Introduction
 
-This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go to the [tomopy.github.io](https://github.com/tomopy/tomopy.github.io) repository. These benchmarks are designed to give the reader the information they need to make an informed decision about which of TomoPy's reconstruction algorithms are right for their particular project. To accomplish that, these benchmarks contain results pertaining to the quality and speed of each reconstruction algorithm as well as the types of artifacts that may occur when using each of the algorithms. 
+This website contains all of the benchmarking data for the latest stable version of TomoPy. If you are interested in older versions, go to the [tomopy.github.io](https://github.com/tomopy/tomopy.github.io) repository. 
+
+These benchmarks are designed to give the reader the information they need to make an informed decision about which of TomoPy's reconstruction algorithms are right for their particular project. To accomplish that, these benchmarks contain results pertaining to the quality and speed of each reconstruction algorithm as well as the types of artifacts that may occur when using each of the algorithms. 
 
 ### Data generation
 
@@ -19,6 +21,7 @@ The data is generated using the routines provided by the [turbo-couscous](https:
 - [SIRT_GPU](/docs/sirt_gpu.md)
 
 To view the documentation for these functions, go to the TomoPy [readthedocs](https://tomopy.readthedocs.io/en/latest/api/tomopy.recon.algorithm.html) website.
+
 3. Each of the reconstructed images is then measured against the original image to quantify reconstruction quality. The quality of the reconstructions is plotted as a function of time and saved.
 
 ### Limitations
@@ -32,6 +35,11 @@ While they are able to account for noise, these benchmarks currently do not acco
   - Photon starvation: When there are regions of relatively high attenuation in a sample, dark streaks can form as a result of few photons reaching the detector. 
 - Hardware-based artifacts:
   - Ring artifact: If a detector is improperly calibrated of otherwise faulty, a faint ring will appear in the reconstruction.
+
+### Quality results
+![Image](2021-02-19/cpu/peppers/summary.svg)
+
+The above graph shows how the quality of the reconstruction relates to the algorithm used. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. 
 
 ### Data organization
 
