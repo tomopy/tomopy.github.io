@@ -9,6 +9,17 @@ These benchmarks are designed to give the reader the information they need to ma
 ## Results
 To see how the iterative reconstruction algorithms improve with each iteration, you see the [summary graph](https://github.com/tomopy/tomopy.github.io/blob/main/2021-02-19/cpu/peppers/summary.svg) after each benchmark. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. 
 
+
+### CPU Summary
+The following is the graph shows how the MS-SIM index improves for each iteration of the available CPU algorithms. 
+
+![Image](/2021-02-19/cpu/peppers/summary.svg)
+
+### GPU Summary
+The following is the graph shows how the MS-SIM index improves for each iteration of the available GPU algorithms. 
+
+![Image](/2021-02-19/gpu/peppers/summary.svg)
+
 Below are the "best" images for each of the available reconstruction algorithms.
 
 ### Gridrec
