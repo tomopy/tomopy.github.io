@@ -26,7 +26,7 @@ Below are the "best" images for each of the available reconstruction algorithms.
 ### SIRT 
 ![Image](/2021-02-19/cpu/peppers/sirt-5.png)
 ### SIRT GPU
-![Image](/2021-02-19/gpu/peppers/sirt_cuda-17.png
+![Image](/2021-02-19/gpu/peppers/sirt_cuda-17.png)
 
 ## Limitations
 
