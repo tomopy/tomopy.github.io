@@ -28,16 +28,6 @@ Below are the "best" images for each of the available reconstruction algorithms.
 ### SIRT GPU
 ![Image](/2021-02-19/gpu/peppers/sirt_cuda-17.png
 
-## Data generation
-
-The data is generated using the routines provided by the [turbo-couscous](https://github.com/tomopy/turbo-couscous) repository. The process consists of three steps. 
-1. Data acquisition is simulated by taking projections from this image ![Image](/2021-02-08/peppers/original.png). Noise is also added to make the projections more realistic.
-2. The simulated data is then reconstructed using each of the reconstruction algorithms.
-
-To view the documentation for these functions, go to the TomoPy [readthedocs](https://tomopy.readthedocs.io/en/latest/api/tomopy.recon.algorithm.html) website.
-
-3. Each of the reconstructed images is then measured against the original image to quantify reconstruction quality. The quality of the reconstructions is plotted as a function of time and saved.
-
 ## Limitations
 
 While they are able to account for noise, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions. These include
@@ -49,6 +39,10 @@ While they are able to account for noise, these benchmarks currently do not acco
   - Photon starvation: When there are regions of relatively high attenuation in a sample, dark streaks can form as a result of few photons reaching the detector. 
 - Hardware-based artifacts:
   - Ring artifact: If a detector is improperly calibrated of otherwise faulty, a faint ring will appear in the reconstruction.
+
+## Data generation
+
+The data is generated using the routines provided by the [turbo-couscous](https://github.com/tomopy/turbo-couscous) repository. 
 
 ## Organization
 
