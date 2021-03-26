@@ -7,16 +7,16 @@ This website contains all of the benchmarking data for the latest stable version
 These benchmarks are designed to give the reader the information they need to make an informed decision about which of TomoPy's reconstruction algorithms are right for their particular project. To accomplish that, these benchmarks contain results pertaining to the quality and speed of each reconstruction algorithm as well as the types of artifacts that may occur when using each of the algorithms. 
 
 ## Results
-To see how the iterative reconstruction algorithms improve with each iteration, you see the [summary graph](https://github.com/tomopy/tomopy.github.io/blob/main/2021-02-19/cpu/peppers/summary.svg) after each benchmark. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. 
+To see how the iterative reconstruction algorithms improve with each iteration, you see the [summary graph](https://github.com/tomopy/tomopy.github.io/blob/main/2021-02-19/cpu/peppers/summary.svg) after each benchmark. To quantitatively measure quality, we use the multi-scale structural similarity index (MS-SSIM) because it has been shown to have a stronger correlation to human perceptions of quality than simpler quality measures like the mean-squared error. The MS-SSIM measures the similarity between two images. In this case, it measures the reconstructed image against the original image shown above. The index has a range from 0 to 1, with 1 meaning images are identical and 0 meaning the images have no similarity. 
 
 
 ### CPU Summary
-The following is the graph shows how the MS-SIM index improves for each iteration of the available CPU algorithms. 
+The following graph shows how the MS-SSIM index improves over-time for the CPU algorithms. 
 
 ![Image](/2021-02-19/cpu/peppers/summary.svg)
 
 ### GPU Summary
-The following is the graph shows how the MS-SIM index improves for each iteration of the available GPU algorithms. 
+The following graph shows how the MS-SSIM index improves over-time for the GPU algorithms. 
 
 ![Image](/2021-02-19/gpu/peppers/summary.svg)
 
@@ -43,13 +43,13 @@ Below are the "best" images for each of the available reconstruction algorithms.
 
 While they are able to account for noise, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions. These include
 - Sample-based artifacts: 
-  - Motion artifacts: If part of the sample is moving during data collection, there can be blurriness in the reconstruction.
+  - Motion artifacts: If part of the sample moves during data collection, there can be blurriness in the reconstruction.
   - Out of field artifact: Dark streaks can appear when part of the sample is outside the field-of-view of the detector.
 - Physics-based artifacts
   - Beam hardening: If an X-ray is polychromatic, materials with a high atomic number can absorb the low-energy X-rays more than the high-energy X-rays.
   - Photon starvation: When there are regions of relatively high attenuation in a sample, dark streaks can form as a result of few photons reaching the detector. 
 - Hardware-based artifacts:
-  - Ring artifact: If a detector is improperly calibrated of otherwise faulty, a faint ring will appear in the reconstruction.
+  - Ring artifact: If a detector is improperly calibrated or otherwise faulty, a faint ring will appear in the reconstruction.
 
 ## Data generation
 
