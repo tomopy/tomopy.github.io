@@ -41,7 +41,13 @@ Below are the "best" images for each of the available reconstruction algorithms.
 
 ## Limitations
 
-While they are able to account for noise, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions. These include
+While they are able to account for some artifacts, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions.
+
+### Included artifacts
+- Physics-based artifacts:
+  - Noise: When there are statistical flucuations in the number of photons aborbed by a detector, the reconstructed image will have pixels that experienced an unwanted change in their value. This gives the image an appearance of graininess. These benchmarks simulate this artifact by adding poisson noise to the generated projections.
+
+### Excluded artifacts
 - Sample-based artifacts: 
   - Motion artifacts: If part of the sample moves during data collection, there can be blurriness in the reconstruction.
   - Out of field artifact: Dark streaks can appear when part of the sample is outside the field-of-view of the detector.
