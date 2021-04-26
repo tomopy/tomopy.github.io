@@ -27,9 +27,9 @@ Below are the "best" images for each of the available reconstruction algorithms.
 ### OSEM
 ![Image](2021-04-26/peppers/osem/osem.499.png)
 ### OSPML Hybrid
-![Image](2021-04-26/peppers/ospml_hybrid/ospml_hybrid-499.png)
+![Image](2021-04-26/peppers/ospml_hybrid/ospml_hybrid.499.png)
 ### OSPML Quad
-![Image](2021-04-26/peppers/ospml_quad/ospml_quad-499.png)
+![Image](2021-04-26/peppers/ospml_quad/ospml_quad.499.png)
 ### PML Hybrid
 ![Image](2021-04-26/peppers/pml_hybrid/pml_hybrid.499.png)
 ### SIRT 
