@@ -33,7 +33,7 @@ Below are the "best" images for each of the available reconstruction algorithms.
 ### PML Hybrid
 ![Image](/2021-04-26/peppers/pml_hybrid/pml_hybrid-499.png)
 ### SIRT 
-![Image](/2021-04-26/peppers/sirt/sirt-499.png)
+![Image](2021-04-26/peppers/sirt/sirt.499.png)
 ### SIRT GPU
 ![Image](/2021-04-26/peppers/sirt_cuda/sirt_cuda-499.png)
 
