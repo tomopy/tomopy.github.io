@@ -13,31 +13,26 @@ To see how the iterative reconstruction algorithms improve with each iteration, 
 ### CPU Summary
 The following graph shows how the MS-SSIM index improves over-time for the CPU algorithms. 
 
-![Image](/2021-02-19/cpu/peppers/summary.svg)
-
-### GPU Summary
-The following graph shows how the MS-SSIM index improves over-time for the GPU algorithms. 
-
-![Image](/2021-02-19/gpu/peppers/summary.svg)
+![Image](/2021-04-26/peppers/summary.svg)
 
 Below are the "best" images for each of the available reconstruction algorithms.
 
 ### Gridrec
-![Image](/2021-02-19/cpu/peppers/gridrec-0.png)
+![Image](/2021-04-26/peppers/gridrec-0.png)
 ### MLEM
-![Image](/2021-02-19/cpu/peppers/mlem-5.png)
+![Image](/2021-04-26/peppers/mlem-499.png)
 ### OSEM
-![Image](/2021-02-19/cpu/peppers/osem-5.png)
+![Image](/2021-04-26/peppers/osem-499.png)
 ### OSPML Hybrid
-![Image](/2021-02-19/cpu/peppers/ospml_hybrid-5.png)
+![Image](/2021-04-26/peppers/ospml_hybrid-499.png)
 ### OSPML Quad
-![Image](/2021-02-19/cpu/peppers/ospml_quad-5.png)
+![Image](/2021-04-26/peppers/ospml_quad-499.png)
 ### PML Hybrid
-![Image](/2021-02-19/cpu/peppers/pml_hybrid-5.png)
+![Image](/2021-04-26/peppers/pml_hybrid-499.png)
 ### SIRT 
-![Image](/2021-02-19/cpu/peppers/sirt-5.png)
+![Image](/2021-04-26/peppers/sirt-499.png)
 ### SIRT GPU
-![Image](/2021-02-19/gpu/peppers/sirt_cuda-17.png)
+![Image](/2021-04-26/peppers/sirt_cuda-499.png)
 
 ## Limitations
 
