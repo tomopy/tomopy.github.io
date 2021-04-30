@@ -28,8 +28,14 @@ The below table showcases the evolution of reconstructed image given by the iter
 |OSPML Hybrid|![Image](/peppers/ospml_hybrid/ospml_hybrid.001.png)|![Image](/peppers/ospml_hybrid/ospml_hybrid.018.png)|![Image](/peppers/ospml_hybrid/ospml_hybrid.095.png)|![Image](/peppers/osem/osem.218.png)|![Image](/peppers/osem/osem.499.png)|
 |OSPML Quad|![Image](/peppers/ospml_quad/ospml_quad.001.png)|![Image](/peppers/ospml_quad/ospml_quad.018.png)|![Image](/peppers/ospml_quad/ospml_quad.095.png)|![Image](/peppers/ospml_quad/ospml_quad.218.png)|![Image](/peppers/ospml_quad/ospml_quad.499.png)|
 |PML Hybrid|![Image](/peppers/pml_hybrid/pml_hybrid.001.png)|![Image](/peppers/pml_hybrid/pml_hybrid.018.png)|![Image](/peppers/pml_hybrid/pml_hybrid.095.png)|![Image](/peppers/pml_hybrid/pml_hybrid.218.png)|![Image](/peppers/pml_hybrid/pml_hybrid.499.png)|
+|PML Quad|![Image](/peppers/pml_quad/pml_quad.001.png)|![Image](/peppers/pml_quad/pml_quad.018.png)|![Image](/peppers/pml_quad/pml_quad.095.png)|![Image](/peppers/pml_quad/pml_quad.218.png)|![Image](/peppers/pml_quad/pml_quad.499.png)|
 |SIRT|![Image](/peppers/sirt/sirt.001.png)|![Image](/peppers/sirt/sirt.018.png)|![Image](/peppers/sirt/sirt.095.png)|![Image](/peppers/sirt/sirt.218.png)|![Image](/peppers/sirt/sirt.499.png)|
 |SIRT GPU|![Image](/peppers/sirt_cuda/sirt.gpu.NN.001.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.018.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.095.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.218.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.499.png)|
+
+|Filter -> | Butterworth | Cosine | Hamming | Hann | Parzen | Ramlak | Shepp |
+| --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+|GRIDREC|peppers/gridrec/gridrec.butterworth.001.png|peppers/gridrec/gridrec.cosine.001.png|peppers/gridrec/gridrec.hamming.001.png|peppers/gridrec/gridrec.hann.001.png|peppers/gridrec/gridrec.parzen.001.png|peppers/gridrec/gridrec.ramlak.001.png|peppers/gridrec/gridrec.shepp.001.png|
+
 
 ## Limitations
 
