@@ -61,17 +61,16 @@ The data is generated using the routines provided by the [turbo-couscous](https:
 
 The benchmarking data is organized as follows:
 
-- date
-    - peppers
-      - gridrec
-      - mlem
-      - osem
-      - ospml_hybrid
-      - osmpl_quad
-      - pml_hybrid
-      - sirt
-      - sirt_gpu
-      - summary
+- peppers
+  - gridrec
+  - mlem
+  - osem
+  - ospml_hybrid
+  - osmpl_quad
+  - pml_hybrid
+  - sirt
+  - sirt_gpu
+  - summary
 
 
 
