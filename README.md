@@ -40,7 +40,7 @@ The below table showcases the evolution of reconstructed image given by the iter
 |Hann|![Image](peppers/gridrec/gridrec.hann.001.png)|
 |Parzen|![Image](peppers/gridrec/gridrec.parzen.001.png)|
 |Ramlak|![Image](peppers/gridrec/gridrec.ramlak.001.png)|
-|Shepp!|[Image](peppers/gridrec/gridrec.shepp.001.png)|
+|Shepp|![Image](peppers/gridrec/gridrec.shepp.001.png)|
 
 
 ## Limitations
