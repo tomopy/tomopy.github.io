@@ -32,9 +32,16 @@ The below table showcases the evolution of reconstructed image given by the iter
 |SIRT|![Image](/peppers/sirt/sirt.001.png)|![Image](/peppers/sirt/sirt.018.png)|![Image](/peppers/sirt/sirt.095.png)|![Image](/peppers/sirt/sirt.218.png)|![Image](/peppers/sirt/sirt.499.png)|
 |SIRT GPU|![Image](/peppers/sirt_cuda/sirt.gpu.NN.001.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.018.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.095.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.218.png)|![Image](/peppers/sirt_cuda/sirt.gpu.NN.499.png)|
 
-|Filter -> | Butterworth | Cosine | Hamming | Hann | Parzen | Ramlak | Shepp |
-| --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-|GRIDREC|![Image](peppers/gridrec/gridrec.butterworth.001.png)|![Image](peppers/gridrec/gridrec.cosine.001.png)|![Image](peppers/gridrec/gridrec.hamming.001.png)|![Image](peppers/gridrec/gridrec.hann.001.png)|![Image](peppers/gridrec/gridrec.parzen.001.png)|![Image](peppers/gridrec/gridrec.ramlak.001.png)|![Image](peppers/gridrec/gridrec.shepp.001.png)|
+|GRIDREC Filter| Reconstructed Image|
+| --------------- | --------------- |
+|Butterworth|![Image](peppers/gridrec/gridrec.butterworth.001.png)|
+|Cosine|![Image](peppers/gridrec/gridrec.cosine.001.png)|
+|Hamming|![Image](peppers/gridrec/gridrec.hamming.001.png)|
+|Hann|![Image](peppers/gridrec/gridrec.hann.001.png)|
+|Parzen|![Image](peppers/gridrec/gridrec.parzen.001.png)|
+|Ramlak|![Image](peppers/gridrec/gridrec.ramlak.001.png)|
+|Shepp!|[Image](peppers/gridrec/gridrec.shepp.001.png)|
+
 ## Limitations
 
 While they are able to account for some artifacts, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions.
