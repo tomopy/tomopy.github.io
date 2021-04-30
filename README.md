@@ -34,7 +34,8 @@ The below table showcases the evolution of reconstructed image given by the iter
 
 |Filter -> | Butterworth | Cosine | Hamming | Hann | Parzen | Ramlak | Shepp |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-|GRIDREC|![Image](peppers/gridrec/gridrec.butterworth.001.png)|![Image](peppers/gridrec/gridrec.cosine.001.png)|![Image](peppers/gridrec/gridrec.hamming.001.png)|![Image](peppers/gridrec/gridrec.hann.001.png)|![Image](peppers/gridrec/gridrec.parzen.001.png)|![Image](peppers/gridrec/gridrec.ramlak.001.png)|![Image](peppers/gridrec/gridrec.shepp.001.png)|
+|GRIDREC|![Image](peppers/gridrec/gridrec.butterworth.001.png)|![Image](peppers/gridrec/gridrec.cosine.001.png)|![Image](peppers/gridrec/gridrec.hamming.001.png)|
+
 ## Limitations
 
 While they are able to account for some artifacts, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions.
