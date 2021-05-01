@@ -42,7 +42,6 @@ The below table showcases the evolution of reconstructed image given by the iter
 |Ramlak|![Image](peppers/gridrec/gridrec.ramlak.001.png)|
 |Shepp|![Image](peppers/gridrec/gridrec.shepp.001.png)|
 
-
 ## Limitations
 
 While they are able to account for some artifacts, these benchmarks currently do not account for the possibility of several classes of artifacts that may occur in realistic conditions.
@@ -69,17 +68,16 @@ The data is generated using the routines provided by the [turbo-couscous](https:
 
 The benchmarking data is organized as follows:
 
-- date
-    - peppers
-      - gridrec
-      - mlem
-      - osem
-      - ospml_hybrid
-      - osmpl_quad
-      - pml_hybrid
-      - sirt
-      - sirt_gpu
-      - summary
+- peppers
+  - gridrec
+  - mlem
+  - osem
+  - ospml_hybrid
+  - osmpl_quad
+  - pml_hybrid
+  - sirt
+  - sirt_gpu
+  - summary
 
 
 
